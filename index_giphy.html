@@ -5,23 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giphy</title>
-    <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">    
+    <title>SNL Giphy</title>
+    <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style_giphy.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="giphy.js"></script>
 </head>
 
 <body>
-    <div>Buttons</div>
     <!--buttons for array-->
-    <div id="gifs-appear-here" class="buttons">
-        <button data-person="amy">amy pohler</button>
+    <!--change data-person types & class-->
+    <div>
+        <div id="gifs-options" class="buttons">
+            <button data-person="amy+pohler" class="gif-button">amy pohler</button>
+            <button data-person="bill+hader" class="gif-button">bill hader</button>
+            <button data-person="tina+fey" class="gif-button">tina fey</button>
+            <button data-person="will+ferrell" class="gif-button">will ferrell</button>
+            <button data-person="kristen+wiig" class="gif-button">kristen wiig</button>
+            <button data-person="leslie+jones" class="gif-button">leslie jones</button>
+            <button data-person="chris+farley" class="gif-button">chris farley</button>
+            <button data-person="kate+mckinnon" class="gif-button">kate mckinnon</button>
+            <button data-person="jimmy+fallon" class="gif-button">jimmy fallon</button>
+            <button data-person="maya+rudolph" class="gif-button"> maya rudolph</button>
+            <button data-person="adam+sandler" class="gif-button">adam sandler</button>
+            <button data-person="aidy+bryant" class="gif-button">aidy bryant</button>
+            <button data-person="fred+armisen" class="gif-button">fred armisen</button>
+        </div>
+    </div>
+
+    <!--div for search form-->
+    <div>
+        <label for="site-search">get more gifs:</label>
+        <input type="search" id="site-search" name="q" aria-label="Search through site content">
+        <button id="search-button">Search</button>
     </div>
 
     <!--div for images-->
     <div>
-
+        <div id="gifs-appear-here"></div>
     </div>
 
 </body>
