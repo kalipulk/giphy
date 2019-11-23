@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    
-    let gifButton = [""];
+
+    let gifButton = ["Amy Poehler", "Bill Hader", "Tina Fey", "Will Ferrell", "Kristen Wiig", "Chris Farley", "JImmy Fallon", "Kate McKinnon", "Maya Rudolph", "Adam Sandler", "Aidy Bryant", "Fred Armisen" ];
 
     function displayButton() {
         $("#gifs-options").empty();
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     function searchGifs(searchTerm) {
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-            searchTerm + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10rating=pg13";
+            searchTerm + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10rating=pg";
 
         $.ajax({
             url: queryURL,
