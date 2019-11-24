@@ -13,24 +13,38 @@
 </head>
 
 <body>
-    <!--buttons for array-->
-    <div>
-        <div id="gifs-options" class="buttons">
-            <button data-person="aidy+bryant" class="gif-button">aidy bryant</button>
-            <button data-person="fred+armisen" class="gif-button">fred armisen</button> -->
+   
+<!--divforsearchform-->
+<div class="search-and-buttons">
+        <div class="search">
+        
+            <label for="site-search">Add a Gif Category:</label>
+        
+            <input type="search" id="site-search" name="q" aria-label="Searchthroughsitecontent">
+        
+            <button id="search-button">Add Gif</button>
+        
+        </div>
+        
+        <!--changedata-persontypes&class-->
+        <div class="buttons-bg">
+        
+            <div id="gifs-options" class="buttons"></div>
+        
         </div>
     </div>
-
-    <!--div for search form-->
-    <div>
-        <label for="site-search">get more gifs:</label>
-        <input type="search" id="site-search" name="q" aria-label="Search through site content">
-        <button id="search-button">Search</button>
+    
+    <!--divforimages-->
+    
+    <div class="gif-area">
+    
+        <div id="gifs-appear-here" class="gifs"></div>
+    
     </div>
-
-    <!--div for images-->
-    <div>
-        <div id="gifs-appear-here"></div>
+    
+    <!--Delete Previous gif in array-->
+    <div class="delete-gif">
+        <div id="deleteArrayItem">Delete Last Gif Entry</div>
     </div>
 
 </body>

@@ -1,12 +1,104 @@
 body {
     font-family: 'Unica One', cursive;
     font-size: 28px;
+    background-image:url("https://image.freepik.com/free-vector/memphis-pattern-background_53876-85418.jpg");
 }
 
 button {
     font-family: 'Unica One', cursive;
     font-size: 18px;
     margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 5px 8px;
+    border:none;
+    background:#E3B41C;
+    color:#fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    outline:none;
 }
+
+img{
+    display:block;
+    margin:auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+input{
+    font-size:22px;
+}
+
+button:hover{
+    cursor:pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.border{
+    border-radius:5px;
+}
+
+.delete-gif {
+    background:#98dbc6;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    padding:10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius:0 0  5px 5px;
+}
+
+.delete-gif > div {
+    padding: 5px 8px;
+    border:none;
+    background:#E3B41C;
+    color:#fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.delete-gif > div:hover {
+    cursor:pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.buttons-bg{
+    background:#F9FFCC;
+    padding:15px 10px;
+}
+
+.search{
+    background:#98dbc6;
+    text-align:center;
+    color:#F9FFCC;
+    padding:10px 0px;
+    border-radius:5px 5px 0 0;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    
+}
+
+.button > div{
+    width:100%;
+}
+
+.gif-area{
+    padding:15px 0px;
+    /* background: rgba(245, 195, 44, 0.65); */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.gifs{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:auto;
+}
+
+.gifs > div{
+    border:6px solid #98dbc6;
+    border-radius:5px;
+    margin:6px 6px;
+}
+

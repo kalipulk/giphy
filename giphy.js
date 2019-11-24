@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let gifButton = ["Amy Poehler", "Bill Hader", "Tina Fey", "Will Ferrell", "Kristen Wiig", "Chris Farley", "JImmy Fallon", "Kate McKinnon", "Maya Rudolph", "Adam Sandler", "Aidy Bryant", "Fred Armisen" ];
+    let gifButton = ["Amy Poehler", "Bill Hader", "Tina Fey", "Will Ferrell", "Kristen Wiig", "Chris Farley", "Jimmy Fallon", "Kate McKinnon", "Maya Rudolph", "Adam Sandler", "Aidy Bryant", "Fred Armisen" ];
 
     function displayButton() {
         $("#gifs-options").empty();
@@ -47,11 +47,15 @@ $(document).ready(function () {
     });
 
     $("#search-button").on("click", function () {
-        console.log("#search-button", $("#site-search").val())
-        $("#site-search").val();
-        searchGifs($("#site-search").val());
-        gifButton.push($("#site-search").val());
-        displayButton();
+        if($("#site-search").val() === ""){
+            alert("The field seems to be empty?! Please add an entry.")
+        } else{
+            console.log("#search-button", $("#site-search").val())
+            $("#site-search").val();
+            searchGifs($("#site-search").val());
+            gifButton.push($("#site-search").val());
+            displayButton();
+        }
     });
 
     // function for "animating" gifs
@@ -69,5 +73,12 @@ $(document).ready(function () {
             $(this).attr("data-state", "still");
         }
     });
+    
+    //Delete Array item
+    $("#deleteArrayItem").on("click", function () {
+        gifButton.pop();
+        displayButton();
+    });
+    
 
 })
